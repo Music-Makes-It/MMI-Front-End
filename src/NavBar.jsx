@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Login from "./Login";
 
 class NavBar extends Component {
   render() {
@@ -44,6 +45,11 @@ class NavBar extends Component {
                 <li className="nav-item">
                   <a className="nav-link" href="/#">
                     Impact
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="./Login.jsx">
+                    Login
                   </a>
                 </li>
               </ul>

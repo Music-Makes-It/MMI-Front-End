@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# :musical_note: Welcome to Music Makes It
+
+A group project for Coder Academy - T3A2-A - Full Stack App, Part A and Part B documentation.
+You can find the authors of this organisation, repositories and project [here](https://github.com/Music-Makes-It/MMI-T3A2-Readme#authors).
+
+Here is the link to our GitHub repo - [Click here.](https://github.com/Music-Makes-It/MMI-T3A2-Readme)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

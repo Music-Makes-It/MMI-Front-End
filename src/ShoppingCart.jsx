@@ -9,7 +9,39 @@ export default class ShoppingCart extends Component {
 
     //initialization of the state
     this.state = {
-      products: [],
+      products: [
+        { id: 1, productName: "T-shirt by Prince", price: 30, quantity: 0 },
+        { id: 2, productName: "Sweater by J.cole", price: 70, quantity: 0 },
+        {
+          id: 3,
+          productName: "Jumper by Rolling Stones",
+          price: 60,
+          quantity: 0,
+        },
+        { id: 5, productName: "T-Shirt by Flintwood", price: 45, quantity: 0 },
+        { id: 6, productName: "Shoes by shoe guy", price: 100, quantity: 0 },
+        {
+          id: 7,
+          productName: "T-shirt by Another One",
+          price: 40,
+          quantity: 0,
+        },
+        {
+          id: 8,
+          productName: "Sweater by Expensive music",
+          price: 60,
+          quantity: 0,
+        },
+        { id: 9, productName: "T-shirt by Immutable", price: 50, quantity: 0 },
+        { id: 10, productName: "Sweater by Havoc", price: 80, quantity: 0 },
+        {
+          id: 11,
+          productName: "Sweater by Nikki Minaj",
+          price: 60,
+          quantity: 0,
+        },
+        { id: 12, productName: "Shoes by The Beetles", price: 70, quantity: 0 },
+      ],
     };
   }
 

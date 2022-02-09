@@ -16,3 +16,13 @@ code {
 .navbar-style {
   background-color: #a6e19c !important;
 }
+
+.explore {
+  background-color: #a6e19c !important;
+  align-items: center;
+  height: 50vh;
+}
+
+.hand-icon {
+  cursor: pointer;
+}

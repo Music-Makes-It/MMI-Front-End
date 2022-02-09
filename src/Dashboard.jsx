@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+// this is the beginning of your dashboard
 export default class Dashboard extends Component {
   render() {
     return (

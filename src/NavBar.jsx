@@ -9,6 +9,7 @@ class NavBar extends Component {
           <a className="navbar-brand" href="/#">
            MUSIC MAKES IT
           </a>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -28,16 +29,19 @@ class NavBar extends Component {
                   Login
                 </Link>
               </li>
+
               <li className="nav-item">
                 <Link to="/Dashboard" className="nav-link">
                   Dashboard
                 </Link>
               </li>
+
               <li className="nav-item">
                 <Link to="/Product" className="nav-link">
                   Wear It
                 </Link>
               </li>
+
               <li className="nav-item">
                 <Link to="/ShoppingCart" className="nav-link">
                   Shopping Cart
@@ -50,4 +54,5 @@ class NavBar extends Component {
     );
   }
 }
+
 export default NavBar;

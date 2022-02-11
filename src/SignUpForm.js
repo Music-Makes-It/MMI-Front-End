@@ -1,7 +1,7 @@
 // this page needs more work
 import React, { Component } from "react";
 
-export default class Login extends Component {
+export default class SignupForm extends Component {
   constructor(props) {
     super(props);
     this.state = { email: "", password: "", message: "" };
@@ -10,7 +10,19 @@ export default class Login extends Component {
   render() {
     return (
       <div>
-        <h4 className="m-1 p-2 border-bottom">Login</h4>
+        <h4 className="m-1 p-2 border-bottom">Sign Up</h4>
+
+        <div className="form-group form-row">
+          <label className="col-lg-4">Full Name:</label>
+          <input
+            type="text"
+            className="form-control"
+            value={this.state.name}
+            onChange={(event) => {
+              this.setState({ name: event.target.value });
+            }}
+          />
+        </div>
 
         {/* Email  confirmation starts here team */}
         <div className="form-group form-row">
@@ -44,10 +56,7 @@ export default class Login extends Component {
           {this.state.message}
 
           <button className="btn btn-primary m-2" onClick={this.onLoginClick}>
-            Login
-          </button>
-          <button className="btn btn-primary m-2" onClick={this.onSignupClick}>
-            Sign Up
+            Sign Up!
           </button>
         </div>
       </div>
@@ -71,7 +80,9 @@ export default class Login extends Component {
       //if mmi customers are successfully logged in, then ...
       this.setState({
         message: (
-          <span className="text-success">Awesome, you are Logged-in</span>
+          <span className="text-success">
+            Awesome, Thank you for signing up fam!
+          </span>
         ),
       });
     } else {
@@ -80,7 +91,7 @@ export default class Login extends Component {
         message: (
           <span className="text-danger">
             Unfortunately our dedicated team at MMI has encountered an issue,
-            please try again
+            please try again!
           </span>
         ),
       });

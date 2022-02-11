@@ -1,18 +1,20 @@
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
+import React, {Component} from "react";
+export default class MainContent extends Component {
+    render() {
+      return (
+        <React.Fragment>
+  <div className="heading1">Explore 
+  <p> A Social Enterprise that moves music deeper into our community</p>
+    <a classButton="button" href="./Product" role="button">Wear It</a>
+</div>
+  </React.Fragment>
+  )
+      }
+    }
+    
 
-import React from "react";
+      
 
-export default function Explore() {
-  return (
-    <>
-      <Jumbotron fluid>
-        <Container className="explore">
-          <h1>EXPLORE !</h1>
-          <Button variant="primary">Primary Button</Button>
-        </Container>
-      </Jumbotron>
-    </>
-  );
-}
+
+
+

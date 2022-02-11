@@ -9,7 +9,7 @@ class NavBar extends Component {
           <a className="navbar-brand" href="/#">
             MUSIC MAKES IT
           </a>
-
+{/* Hamberger toggle, implemented for smaller screens and easy navigation  */}
           <button
             className="navbar-toggler"
             type="button"

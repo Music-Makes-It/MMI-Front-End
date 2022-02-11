@@ -7,6 +7,8 @@ export default class MainContent extends Component {
   <p> A Social Enterprise that moves music deeper into our community</p>
     <a classButton="button" href="./Product" role="button">Wear It</a>
 </div>
+
+
 {/* Merch updates form */}
     <div className="MerchUpdateForm">
       <h1>Sign up to get updates on newly released Merch</h1>
@@ -26,7 +28,7 @@ export default class MainContent extends Component {
          </label>
 
        </fieldset>
-       <a classButton="button" href="./MerchLetter" role="button">Submit</a>
+       <a classButton="button" role="button">Submit</a>
       </form>
     </div>
   </React.Fragment>

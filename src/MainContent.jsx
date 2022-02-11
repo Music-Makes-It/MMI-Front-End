@@ -1,18 +1,48 @@
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
+import React, {Component} from "react"; 
+export default class MainContent extends Component {
+    render() {
+      return (
+        <React.Fragment>
+  <div className="heading1">Explore 
+  <p> A Social Enterprise that moves music deeper into our community</p>
+    <a classButton="button" href="./Product" role="button">Wear It</a>
+</div>
+{/* Merch updates form */}
+    <div className="MerchUpdateForm">
+      <h1>Sign up to get updates on newly released Merch</h1>
+      <form>
+      <fieldset>
+         <label>
+           <p>First Name</p>
+           <input name="First Name" />
+         </label>
+         <label>
+           <p>Last Name</p>
+           <input name="Last Name" />
+         </label>
+         <label>
+           <p>Email</p>
+           <input name="Email" />
+         </label>
 
-import React from "react";
+       </fieldset>
+       <a classButton="button" href="./MerchLetter" role="button">Submit</a>
+      </form>
+    </div>
+  </React.Fragment>
+  )
+      }
+    }
+    
+  
 
-export default function Explore() {
-  return (
-    <>
-      <Jumbotron fluid>
-        <Container className="explore">
-          <h1>EXPLORE !</h1>
-          <Button variant="primary">Primary Button</Button>
-        </Container>
-      </Jumbotron>
-    </>
-  );
-}
+
+
+
+
+
+      
+
+
+
+

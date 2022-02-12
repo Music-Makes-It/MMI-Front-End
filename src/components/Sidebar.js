@@ -32,6 +32,20 @@ const Sidebar = () => {
               </li>
 
               <li class="has-sub">
+                <Link to="login" class="sidenav-item-link">
+                  <i class="mdi mdi-folder-multiple-outline"></i>
+                  <span class="nav-text">Login</span> <b class="caret"></b>
+                </Link>
+              </li>
+
+              <li class="has-sub">
+                <Link to="signup" class="sidenav-item-link">
+                  <i class="mdi mdi-folder-multiple-outline"></i>
+                  <span class="nav-text">Sign Up!</span> <b class="caret"></b>
+                </Link>
+              </li>
+
+              <li class="has-sub">
                 <Link to="/cart" class="sidenav-item-link">
                   <i class="mdi mdi-folder-multiple-outline"></i>
                   <span class="nav-text">Cart</span> <b class="caret"></b>

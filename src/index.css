@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.sidebar-fixed {
+  background-color: #a6e19c !important;
+}
+
+.sidebar {
+  background-color: #1daf70 !important;
+}
+
+.nav-text {
+  font-weight: bold;
+  color: black;
+}

@@ -13,7 +13,7 @@ export default class Login extends Component {
         <h4 className="m-1 p-2 border-bottom">Login</h4>
 
         {/* Email  confirmation starts here team */}
-        <div className="form-group form-row">
+        <div className="form-group form-row m-4">
           <label className="col-lg-4">Email:</label>
           <input
             type="text"
@@ -27,7 +27,7 @@ export default class Login extends Component {
         {/* Email confrimation ends */}
 
         {/* Password confirmation starts here team */}
-        <div className="form-group form-row">
+        <div className="form-group form-row m-4">
           <label className="col-lg-4">Password:</label>
           <input
             type="password"

@@ -12,7 +12,8 @@ export default class SignupForm extends Component {
       <div>
         <h4 className="m-1 p-2 border-bottom">Sign Up</h4>
 
-        <div className="form-group form-row">
+        {/* Name confirmation starts here team */}
+        <div className="form-group form-row m-4">
           <label className="col-lg-4">Full Name:</label>
           <input
             type="text"
@@ -23,9 +24,24 @@ export default class SignupForm extends Component {
             }}
           />
         </div>
+        {/* Name confrimation ends */}
 
-        {/* Email  confirmation starts here team */}
-        <div className="form-group form-row">
+        {/* Address confirmation starts here team */}
+        <div className="form-group form-row m-4">
+          <label className="col-lg-4">Address:</label>
+          <input
+            type="text"
+            className="form-control"
+            value={this.state.address}
+            onChange={(event) => {
+              this.setState({ address: event.target.value });
+            }}
+          />
+        </div>
+        {/* Address confrimation ends */}
+
+        {/* Email confirmation starts here team */}
+        <div className="form-group form-row m-4">
           <label className="col-lg-4">Email:</label>
           <input
             type="text"
@@ -39,7 +55,7 @@ export default class SignupForm extends Component {
         {/* Email confrimation ends */}
 
         {/* Password confirmation starts here team */}
-        <div className="form-group form-row">
+        <div className="form-group form-row m-4">
           <label className="col-lg-4">Password:</label>
           <input
             type="password"

@@ -1,5 +1,8 @@
 // this page needs more work
 import React, { Component } from "react";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 
 export default class Login extends Component {
   constructor(props) {
@@ -10,45 +13,62 @@ export default class Login extends Component {
   render() {
     return (
       <div>
-        <h4 className="m-1 p-2 border-bottom">Login</h4>
+        <div>
+          <div class="mobile-sticky-body-overlay"></div>
 
-        {/* Email  confirmation starts here team */}
-        <div className="form-group form-row m-4">
-          <label className="col-lg-4">Email:</label>
-          <input
-            type="text"
-            className="form-control"
-            value={this.state.email}
-            onChange={(event) => {
-              this.setState({ email: event.target.value });
-            }}
-          />
-        </div>
-        {/* Email confrimation ends */}
+          <div class="wrapper">
+            <Sidebar />
+          </div>
+          <div class="page-wrapper">
+            <Header />
+          </div>
 
-        {/* Password confirmation starts here team */}
-        <div className="form-group form-row m-4">
-          <label className="col-lg-4">Password:</label>
-          <input
-            type="password"
-            className="form-control"
-            value={this.state.password}
-            onChange={(event) => {
-              this.setState({ password: event.target.value });
-            }}
-          />
-        </div>
-        {/* Password ends */}
+          <div class="page-wrapper">
+            <Footer />
+          </div>
+          <h4 className="m-1 p-2 border-bottom">Login</h4>
 
-        <div className="text-right">
-          {this.state.message}
+          {/* Email  confirmation starts here team */}
+          <div className="form-group form-row m-4">
+            <label className="col-lg-4">Email:</label>
+            <input
+              type="text"
+              className="form-control"
+              value={this.state.email}
+              onChange={(event) => {
+                this.setState({ email: event.target.value });
+              }}
+            />
+          </div>
+          {/* Email confrimation ends */}
 
-          <button className="btn btn-primary m-2" onClick={this.onLoginClick}>
-            Login
-          </button>
-          <button className="btn btn-primary m-2" onClick={this.onSignupClick}>
-            Sign Up
-          </button>
+          {/* Password confirmation starts here team */}
+          <div className="form-group form-row m-4">
+            <label className="col-lg-4">Password:</label>
+            <input
+              type="password"
+              className="form-control"
+              value={this.state.password}
+              onChange={(event) => {
+                this.setState({ password: event.target.value });
+              }}
+            />
+          </div>
+          {/* Password ends */}
+
+          <div className="text-right">
+            {this.state.message}
+
+            <button className="btn btn-primary m-2" onClick={this.onLoginClick}>
+              Login
+            </button>
+            <button
+              className="btn btn-primary m-2"
+              onClick={this.onSignupClick}
+            >
+              Sign Up
+            </button>
+          </div>
         </div>
       </div>
     );
